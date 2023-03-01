@@ -1,5 +1,6 @@
 import { useState } from 'react'
-
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
       
       </div>
       <h1>SlackLinePGH</h1>
+      <Button as="a" variant="primary">
+    Teach Me Daddy K
+      </Button>
       </div>
   )
 }
