@@ -11,15 +11,8 @@ function App() {
 
   return (
     <div className="App">
-
-      
         <LandingPage/>
-
-      <Button as="a" variant="primary">
-    Teach Me Daddy K
-      </Button>
-
-      </div>
+    </div>
   )
 }
 
