@@ -25,14 +25,11 @@ width: 50%;
 
   background-color: cornflowerblue;
 }
-.heading {
+.card-img-overlay {
   display: flex;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  
+ 
 
-  color: ;
-
-  height: 150px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwZYhl79BklqZ47ENMW_n73UtWXRhZVnHQHvkXXEzpA&usqp=CAU&ec=48600113");
-  background-repeat: no-repeat;
 }
