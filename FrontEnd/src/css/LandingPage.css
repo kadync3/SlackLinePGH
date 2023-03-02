@@ -2,10 +2,36 @@
   width: 50px;
   height: 50px;
 }
-.landing {
 
+.description {
+  width: 600px;
+
+}
+.landing{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .intro {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+width: 70%;
+
+  background-color: cornflowerblue;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  color: ;
+
+  height: 150px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwZYhl79BklqZ47ENMW_n73UtWXRhZVnHQHvkXXEzpA&usqp=CAU&ec=48600113");
+  background-repeat: no-repeat;
 }
