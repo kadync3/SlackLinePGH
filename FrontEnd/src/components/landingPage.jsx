@@ -8,13 +8,7 @@ function LandingPage (){
   return (
 <div className='landing'>
     
-       
-      
-      
-
-      <div className='intro' >
-      {/* <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi012vWZuT0O8NgOjoucvuPbG5R5iFw4CBCq1gNW8aZA&usqp=CAU&ec=48600113'></img> */}
-        <Card>
+        <Card className='intro'>
         <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi012vWZuT0O8NgOjoucvuPbG5R5iFw4CBCq1gNW8aZA&usqp=CAU&ec=48600113" />
         <Card.Body>
           <Card.Text>
@@ -23,7 +17,7 @@ function LandingPage (){
         </Card.Body>
       </Card>
       </div>
-    </div>
+    
   )
 };
 
