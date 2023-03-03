@@ -3,12 +3,14 @@ import { useState } from 'react'
 import styles from '../css/LandingPage.css'
 import Card from 'react-bootstrap/Card';
 
+
+
 function LandingPage (){
 
 
   return (
 <div className='landing'>
-    
+          
         <Card className='intro'>
         <Card.Img variant="top"  className="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwZYhl79BklqZ47ENMW_n73UtWXRhZVnHQHvkXXEzpA&usqp=CAU&ec=48600113" />
         <Card.Body>
