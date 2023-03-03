@@ -1,24 +1,23 @@
 import { useState } from 'react'
-
-import LandingPage from './components/landingPage'
-import './App'
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LandingPage from './components/landingPage'
 
 
 function App() {
 
 
   return (
-    <div className="App">
+    <BrowserRouter className="App">
 
 
-          <a href="https://vitejs.dev" target="_blank">
+          <Link to="" target="_blank">
             <img src="https://us.123rf.com/450wm/thesilhouettequeen/thesilhouettequeen2010/thesilhouettequeen201008659/158114154-slacklining-silhouette-vector.jpg?ver=6  " className="logo" alt="Vite logo" />
-         </a>
+         </Link>
 
         <LandingPage/>
-    </div>
+    </BrowserRouter>
   )
 }
 
