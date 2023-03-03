@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react'
 import styles from '../css/LandingPage.css'
 import Card from 'react-bootstrap/Card';
@@ -18,7 +19,6 @@ function LandingPage (){
         </Card.Body>
       </Card>
       </div>
-    
   )
 };
 
