@@ -1,11 +1,9 @@
-
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PGHnavbar from './components/navbar';
-import LandingPage from './components/landingPage';
+import PGHnavbar from './components/Navbar';
+import LandingPage from './components/LandingPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LandingPage from './components/landingPage'
-
+import ScheduleLesson from './components/ScheduleLesson';
 
 function App() {
 
@@ -16,6 +14,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={
             <LandingPage/>}/>
+        <Route path='/ScheduleLesson' element={
+            <ScheduleLesson/>} />   
       </Routes>
     </BrowserRouter>
   )
