@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import PGHnavbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
