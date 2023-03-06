@@ -48,13 +48,18 @@ function MyGoal () {
     </Carousel>
       <Card.Body className='intro'>
         <Card.Text>
-        Hello! As a slackline coach, my main goal is to help my clients improve their balance, core strength, and overall physical and mental coordination. I want to help them develop the skills and confidence needed to walk and perform tricks on the slackline with ease and grace.
-
-My reason for coaching is simple: I love slacklining and I want to share my passion with others. I believe that slacklining is not only a fun and challenging activity, but also a great way to improve one's physical and mental well-being. It requires focus, concentration, and perseverance, all of which are valuable skills that can be applied to other areas of life.
-
-In addition to helping my clients improve their slacklining skills, I also want to create a supportive and inclusive community of slackliners. I want to foster an environment where everyone feels welcome, regardless of their skill level or background. I believe that by working together and supporting one another, we can all achieve our goals and have a lot of fun along the way.
-
-So, whether you're a beginner looking to take your first steps on the slackline or an experienced slackliner looking to master new tricks, I'm here to help! Let's work together to achieve your goals and have a great time in the process.
+       <p>
+         Hello! As a slackline coach, my main goal is to help my clients improve their balance, core strength, and overall physical and mental coordination. I want to help them develop the skills and confidence needed to walk and perform tricks on the slackline with ease and grace.
+        </p>
+        <p>
+        My reason for coaching is simple: I love slacklining and I want to share my passion with others. I believe that slacklining is not only a fun and challenging activity, but also a great way to improve one's physical and mental well-being. It requires focus, concentration, and perseverance, all of which are valuable skills that can be applied to other areas of life.
+        </p>
+        <p>
+        In addition to helping my clients improve their slacklining skills, I also want to create a supportive and inclusive community of slackliners. I want to foster an environment where everyone feels welcome, regardless of their skill level or background. I believe that by working together and supporting one another, we can all achieve our goals and have a lot of fun along the way.
+        </p>
+        <p>
+        So, whether you're a beginner looking to take your first steps on the slackline or an experienced slackliner looking to master new tricks, I'm here to help! Let's work together to achieve your goals and have a great time in the process.
+        </p>
         </Card.Text>
       </Card.Body>
     </Card>
