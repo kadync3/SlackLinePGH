@@ -18,11 +18,9 @@ function PGHnavbar() {
             <Nav.Link href="#services">Whats Offered</Nav.Link>
             <Nav.Link href="#link"></Nav.Link>
             <NavDropdown title="" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/MyGoal">My Goal</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-              Schedule Lessons
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Cancle Lessons</NavDropdown.Item>
+            <NavDropdown.Item href="/MyGoal">My Goal</NavDropdown.Item>
+              <NavDropdown.Item href="/ScheduleLesson">Schedule Lessons </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Cancel Lessons</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                  Students Progress 
