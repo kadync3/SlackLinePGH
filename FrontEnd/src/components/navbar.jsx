@@ -8,7 +8,7 @@ function PGHnavbar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/home"> 
+        <Navbar.Brand href="/"> 
             <img src="https://us.123rf.com/450wm/thesilhouettequeen/thesilhouettequeen2010/thesilhouettequeen201008659/158114154-slacklining-silhouette-vector.jpg?ver=6  " className="logo" />
          
          </Navbar.Brand>
@@ -18,7 +18,7 @@ function PGHnavbar() {
             <Nav.Link href="#services">Whats Offered</Nav.Link>
             <Nav.Link href="#link"></Nav.Link>
             <NavDropdown title="" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">My Goal</NavDropdown.Item>
+              <NavDropdown.Item href="/MyGoal">My Goal</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
               Schedule Lessons
               </NavDropdown.Item>
