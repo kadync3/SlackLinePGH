@@ -6,11 +6,12 @@ function ScheduleLesson() {
     return (
         <div>
             <h1>Schedule Lesson</h1>
-            <form className='intro' >
+            <form class='intro' >
             <input type="text" placeholder='First Name'/>
             <input type="text" placeholder='Last Name'/>
             <input type="text" placeholder='Email'/>
             <input type="datetime-local"/>
+            
             </form>
         </div>
     );

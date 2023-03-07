@@ -5,9 +5,10 @@ import Carousel from 'react-bootstrap/Carousel';
 function MyGoal () {
 
   return (
-    
-    <Card className='landing'>
-      <Carousel fade className='intro'>
+    <div className='landing'>
+
+    <Card  className='intro'>
+      <Carousel fade>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -24,7 +25,7 @@ function MyGoal () {
           className="d-block w-100"
           src="https://media.istockphoto.com/id/1129815448/photo/woman-practices-slacklining-in-a-park.jpg?s=612x612&w=0&k=20&c=BlgsFKWyS_BScP96U3rynwYrfcTz22ez-7iTx9XqDk8="
           alt="Second slide"
-        />
+          />
 
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -36,7 +37,7 @@ function MyGoal () {
           className="d-block w-100"
           src="https://media.gettyimages.com/id/537450359/photo/girl-walking-on-slack-line.jpg?s=612x612&w=gi&k=20&c=W73Ex5cjtsUdkro8jRkwHtvPiMPUUmu7wVxDau2v7ME="
           alt="Third slide"
-        />
+          />
 
         <Carousel.Caption>
           <h3>Third slide label</h3>
@@ -46,7 +47,7 @@ function MyGoal () {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-      <Card.Body className='intro'>
+      <Card.Body>
         <Card.Text>
        <p>
          Hello! As a slackline coach, my main goal is to help my clients improve their balance, core strength, and overall physical and mental coordination. I want to help them develop the skills and confidence needed to walk and perform tricks on the slackline with ease and grace.
@@ -63,6 +64,7 @@ function MyGoal () {
         </Card.Text>
       </Card.Body>
     </Card>
+          </div>
   )
 }
 export default MyGoal
