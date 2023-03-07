@@ -12,7 +12,7 @@ function LandingPage (){
 <div className='landing'>
           
         <Card className='intro'>
-        <Card.Img variant="top"  className="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwZYhl79BklqZ47ENMW_n73UtWXRhZVnHQHvkXXEzpA&usqp=CAU&ec=48600113" />
+        <Card.Img variant="top"  className="card-img" src="http://s3.amazonaws.com/visit-pittsburgh/CMS/Download-Files/Zoom-Backgrounds/Pittsburgh-Zoom_Pittsburgh-Skyline-Purple-Sky.png " />
         <Card.Body>
           <Card.Title className='card-img-overlay'>Slackline PGH</Card.Title>
           <Card.Text>

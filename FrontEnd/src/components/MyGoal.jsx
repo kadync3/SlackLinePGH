@@ -5,9 +5,9 @@ import Carousel from 'react-bootstrap/Carousel';
 function MyGoal () {
 
   return (
-    <div className='landing'>
+    <div>
 
-    <Card  className='intro'>
+    <Card >
       <Carousel fade>
       <Carousel.Item>
         <img
