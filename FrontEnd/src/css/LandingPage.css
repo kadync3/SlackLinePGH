@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+ 
 }
 .intro {
   display: flex;
@@ -18,7 +19,7 @@
   flex-direction: column;
   
   border-radius: 10px;
-  
+
 
 
 width: 50%;
