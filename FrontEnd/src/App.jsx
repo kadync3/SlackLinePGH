@@ -47,21 +47,27 @@ function App() {
       }
     };
     console.log(session);
-    
+    console.log(eventName);
+    console.log(eventDiscription);
   return (
   
     <div>
       {session ?  <BrowserRouter>
     <PGHnavbar/>
     <button onClick={()=> signOut()} > Sign Out</button>
+      <form className='form'>
     <p>Start of Event</p>
       <DateTimePicker onChange={setStart} value={start}/>
+      <hr/>
       <p>End of Event</p>
       <DateTimePicker onChange={setEnd} value={end}/>
-      <form>
-        <input type="text " onChange={(e) => setEventName(e.target.value)} defaultValue='Name'></input>
-        <input type="text " onChange={(e) => setEventDiscription(e.target.value)} defaultValue='Length'></input>
-        <input type='submit' onClick={() => createCalendarEvent()}></input>
+        <hr/>
+        <input type="text " onChange={(e) => setEventName(e.target.value)} defaultValue='Full Name' onFocus={(e) => (e.target.value='')} onBlur={(e)=> (e.target.value='Full Name')} ></input>
+        <hr/>
+        <input type="int" onChange={(e) => setEventDiscription(e.target.value)} onFocus={(e) => (e.target.value='')} defaultValue='Type of Lessons' onBlur={(e)=> (e.target.value='Type of Lessons')}></input>
+        <hr/>
+        <button type='submit'  onClick={() => createCalendarEvent()}>Create Lesson</button>
+        
       </form>
       <Routes>
         <Route exact path="/" element={
