@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, json } from 'react-router-dom';
 import { useSession, useSupabaseClient, useSessionContext } from '@supabase/auth-helpers-react';
 import DateTimePicker from 'react-datetime-picker'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -41,30 +41,55 @@ function App() {
     };
 
     async function createCalendarEvent(){
+    
       console.log("Creating Calendar Event")
       const event = {
-        "summary" : event
+        "summary" : eventName,
+        "description": eventDiscription,
+        "start" : {
+          "dateTime" : start.toISOString(),
+          "timeZone" :  Intl.DateTimeFormat().resolvedOptions().timeZone
+        },
+        "end" : {
+          "dateTime" : end.toISOString(),
+          "timeZone" :  Intl.DateTimeFormat().resolvedOptions().timeZone
+        }
       }
+    await fetch("https://www.googleapis.com/calendar/v3/calendars/primary/events", {
+      method: "POST",
+      headers: {
+        "Authorization": "Bearer " + session.provider_token
+      },
+      body : JSON.stringify(event)
+    }).then((data)=> {
+      return data.json();
+
+    }).then((data)=>{
+      console.log(data)
+      alert("Lesson Scheduled check your Google Calandar!")
+    })
     };
     console.log(session);
     console.log(eventName);
     console.log(eventDiscription);
+    
+    
   return (
   
     <div>
       {session ?  <BrowserRouter>
     <PGHnavbar/>
     <button onClick={()=> signOut()} > Sign Out</button>
-      <form className='form'>
+      <form className='form' onSubmit={(event) => event.preventDefault()}>
     <p>Start of Event</p>
       <DateTimePicker onChange={setStart} value={start}/>
       <hr/>
       <p>End of Event</p>
       <DateTimePicker onChange={setEnd} value={end}/>
         <hr/>
-        <input type="text " onChange={(e) => setEventName(e.target.value)} defaultValue='Full Name' onFocus={(e) => (e.target.value='')} onBlur={(e)=> (e.target.value='Full Name')} ></input>
+        <input type="text " onChange={(e) => setEventName(e.target.value)} defaultValue='Full Name' onFocus={(e) => (e.target.value='')}  ></input>
         <hr/>
-        <input type="int" onChange={(e) => setEventDiscription(e.target.value)} onFocus={(e) => (e.target.value='')} defaultValue='Type of Lessons' onBlur={(e)=> (e.target.value='Type of Lessons')}></input>
+        <input type="int" onChange={(e) => setEventDiscription(e.target.value)} onFocus={(e) => (e.target.value='')} defaultValue='Type of Lessons' ></input>
         <hr/>
         <button type='submit'  onClick={() => createCalendarEvent()}>Create Lesson</button>
         
